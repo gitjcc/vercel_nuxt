@@ -1,16 +1,10 @@
 {
-  "name": "nuxt-app",
   "private": true,
-  "type": "module",
   "scripts": {
-    "build": "SERVER_PRESET=vercel_edge nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "build": "NITRO_PRESET=vercel-edge nuxt build",
+    "dev": "nuxt dev"
   },
-  "dependencies": {
-    "nuxt": "^3.12.3",
-    "vue": "latest"
+  "devDependencies": {
+    "nuxt": "^3.0.0"
   }
 }
