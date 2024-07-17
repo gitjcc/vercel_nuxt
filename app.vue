@@ -32,7 +32,7 @@ const generatedAt = useState(() => new Date().toISOString())
     <div style="height: 100%">
       <AppBackground />
       <main>
-        <h1>Hello from the edge!</h1>
+        <h1>Hello from the {{ info.region || '-'}}({{ info.vercel_region || '-'}})!</h1>
         <div class="info">
           <div class="block">
             <div class="contents">
